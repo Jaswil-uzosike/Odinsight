@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/map.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="map" style="filter: grayscale(0.5);"></main>
+    
+    <aside>
+      <div id="main">
+        <h1 id="title">Odinsight</h1>
+        <!-- <input type="text" id="searchInput" placeholder="Search..." />
+        <button id="searchButton" onclick="performSearch()">
+          <p1 id="searchText">Search</p1>
+        </button> -->
+
+        <input type="text" id="searchInput" placeholder="Where do you want to stay?" />
+        <button id="searchButton">
+          Search
+        </button>
+
+        <button id="attractionButton">
+          Find Attraction
+        </button>
+
+        <button id="restaurantButton">
+          Find Restaurant
+        </button>
+        <!-- List state information here (rainfall) -->
+        <!-- Also list hotels and homestays -->
+        <div id="homestayDetails">Select a homestay to see details here:</div>
+      </div>
+      <div id="footer">
+        <a id="backButton" href="/">← Go back</a>
+      </div>
+    </aside>
+
+    <!-- Load Google Maps API & Run main JS file. API key goes in the src-->
+    <script type="text/javascript" src="./scripts/map.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/" 
+    ></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  </body>
+</html>
+
+
+<!--<script
+      async
+      src="https://maps.googleapis.com/maps/api/" 
+    ></script>

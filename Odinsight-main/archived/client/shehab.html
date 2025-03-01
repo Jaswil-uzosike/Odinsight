@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 600px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <!-- Sidenav content -->
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button onclick="performSearch()">Search</button>
+      <!-- ... Other sidenav content ... -->
+    </div>
+
+    <div id="map"></div>
+
+    <!-- ... rest of shehab.html ... -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD68bcuALr6XzFAr_HAzRW2Kdi9ZYXABo&callback=initMap"
+    ></script>
+
+    <!-- Your JavaScript file -->
+    <script type="text/javascript" src="./scripts/shehab.js"></script>
+  </body>
+</html>
